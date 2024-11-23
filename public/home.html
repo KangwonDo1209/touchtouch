@@ -1,1 +1,21 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Aircon</title>
+    <link rel="shortcut icon" href="#">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="airconditioner.js"></script>
+</head>
+
+<body>
+    <h1>My Aircon</h1>
+    <img src="data/air_conditioner.png" alt="air_conditioner" width="200" height="200">
+    <p>현재 온도: <span id="countDisplay">0</span></p>
+    <button type="button" onclick="decrementTemperture()">-</button>
+    <button type="button" onclick="incrementTemperture()">+</button>
+    <button type="button" onclick="executeAudio()">소리On/Off</button>
+</body>
+
+</html>
